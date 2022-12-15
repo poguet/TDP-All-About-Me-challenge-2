@@ -5,37 +5,133 @@ margin: 0;
 
 :root{
     --background-color: black;
-    --primary-color: rgb(48, 1, 48);
-    --secondary-color: rgb(204, 174, 4);
+    --primary-color: rgb(0, 183, 255);
+    --secondary-color: rgb(4, 71, 204);
     --white-text-color: white;
     --black-text-color: black;
 
 }
 
-header {
-    border: dashed;
-    background-color: var(--background-color)
+header{
+    margin: 5px;
+    padding: 5px;
+    font-family:cursive;
+    border: solid;
+    border-color: var(--secondary-color);
+    background: linear-gradient(to left, var(--primary-color),var(--secondary-color));
+}
+
+
+body{ 
+    background: linear-gradient(to right, var(--primary-color),var(--secondary-color));
+}
+
+h1 {
+    float:right;
 }
 
 .AboutMeTitle{
-    font-family:'Courier New', Courier, monospace;
+    font-family:Arial, Helvetica, sans-serif;
+    display:block;
+    margin: 1em 0 0 3em;
 
+}
+
+.AboutMeparagraph{
+    display:block;
+    margin: 1em 0 0 4em;
+
+    
 }
 
 .ProfilePic{
-    height: 700px;
+    margin-right: 2em;
+    border-radius: 25px;
+    height: 500px;
     width: 400px;
+    display:block;
+    float: right;
+    box-shadow: 10px 10px 5px;
+}
+.ProfilePic:hover{
+    box-shadow: 0px 0px 10px 10px white; 
 }
 
 .ContactMe{
-    text-decoration-style: none;
-}
-
-li a{
-    text-decoration-style: none;
+    text-decoration: none;
     color: black;
 }
 
-a:link {
+.links {
     text-decoration: none;
+    color: white;
+}
+
+.Work{
+    font-family:Arial, Helvetica, sans-serif;
+    display:inline-block;
+    margin: 20em 0 0 3em;
+}
+
+
+.work1{
+    display:block;
+    margin: 15px;
+    border-radius: 25px;
+    height:500px;
+    width: 900px;
+    box-shadow: 0px 0px 10px 10px black;
+}
+.work1:hover{
+    box-shadow: 0px 0px 10px 10px white;
+}
+
+.work2{
+    display:inline-block;
+    border-radius: 25px;
+    margin: 10px;
+    height:500px;
+    width: 500px;
+    box-shadow: 0px 0px 10px 10px black;
+}
+
+.work2:hover{
+    box-shadow: 0px 0px 10px 10px white;
+}
+
+.work3 {
+    display: inline-block;
+    border-radius: 25px;
+    margin: 10px; 
+    height: 500px;
+    width: 500px;
+    box-shadow: 0px 0px 10px 10px black;
+}
+.work3:hover{
+    box-shadow: 0px 0px 10px 10px white;
+}
+
+.ContactMeHeader{
+    font-family:Arial, Helvetica, sans-serif;
+    display:block;
+    margin: 1em 0 0 3em;
+}
+
+.ContactMe{
+    font-family:Arial, Helvetica, sans-serif;
+    display:block;
+    margin: 1em 0 0 3em;
+    font-size: 20px;
+}
+
+.footer {
+    font-family:Arial, Helvetica, sans-serif;
+    display:block;
+    margin: 1em 0 0 3em;
+    text-align: center;
+    font-size: 30px;
+}
+
+@media screen and (max-width:400px){
+
 }
