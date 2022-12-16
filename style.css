@@ -24,7 +24,9 @@ header{
 
 body{ 
     background: linear-gradient(to right, var(--primary-color),var(--secondary-color));
-}
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}  
 
 h1 {
     float:right;
@@ -144,5 +146,44 @@ h1 {
 }
 
 @media screen and (max-width:400px){
-
+    .ProfilePic{
+        margin: 10em;
+        margin-left: 30em;
+        border-radius: 25px;
+        height: 50%;
+        width: 50%;
+        display:block;
+        box-shadow: 10px 10px 5px; 
+    }
+    .AboutMeparagraph{
+        border: dotted;
+        padding: 2px;
+        max-width: 700px;
+        font-size: 20px;
+        display:block;
+        inline-size: 370px;
+        overflow-wrap: break-word;
+        margin: 1em 0 0 2.5em;   
+    }
+    body{ 
+        background: linear-gradient(to right, var(--primary-color),var(--secondary-color));
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    header{
+        margin: 5px 0 0 20px;
+        padding: 5px;
+        font-family: cursive;
+        border: solid;
+        border-color: var(--secondary-color);
+        background: linear-gradient(to left, var(--primary-color),var(--secondary-color));
+    }
+    .work1{
+        display:block;
+        margin: 15px;
+        border-radius: 25px;
+        height:500px;
+        width: 650px;
+        box-shadow: 0px 0px 10px 10px black;
+    }  
 }
